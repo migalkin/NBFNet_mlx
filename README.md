@@ -2,6 +2,7 @@
 
 [MLX] re-implementation of [NBFNet] for Apple Silicon with the [mlx-graphs] framework for building GNNs. 
 Runs natively on GPUs built into any M1, M2, M3, and newer chip! Developed and tested on M2 Max (32 GB).
+This implementation roughly follows the [NBFNet-PyG](https://github.com/KiddoZhu/NBFNet-PyG) logic.
 
 [MLX]: https://github.com/ml-explore/mlx
 [NBFNet]: https://github.com/DeepGraphLearning/NBFNet
