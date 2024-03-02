@@ -23,7 +23,10 @@ Because MLX still lacks certain numpy and torch primitives, this repo implements
 
  - [x] Upstream the `GeneralizedRelationalConv` layer into mlx-graphs. [Done!](https://github.com/mlx-graphs/mlx-graphs/pull/111) Will likely to be featured in mlx-graphs 0.0.4 and later
  - [ ] Upstream inductive KG datasets into mlx-graphs
+ - [ ] Clean up the code when layers and datasets are fully upstreamed.
  - [ ] Update `edge_match` and `strict_negative_sampling` functions when `meshgrid` and `bucketize` are implemented in the core MLX
+
+ The team behind mlx-graphs is super fast and responsive, thanks [Tristan Billot](https://github.com/TristanBilot) for helpful advice with mlx and mlx-graphs! 
 
 ## Installation ##
 
