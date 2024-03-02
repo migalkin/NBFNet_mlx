@@ -1,0 +1,32 @@
+output_dir: ~/scratch/experiments/
+
+dataset:
+  class: IndWN18RR
+  root: ~/datasets/knowledge_graphs/
+  version: {{ version }}
+
+model:
+  class: NBFNet
+  input_dim: 32
+  hidden_dims: [32, 32, 32, 32, 32, 32]
+  message_func: distmult
+  aggregate_func: add
+  short_cut: yes
+  layer_norm: yes
+  dependent: no
+  remove_one_hop: no
+
+task:
+  num_negative: 32
+  strict_negative: yes
+  adversarial_temperature: 1
+  metric: [mr, mrr, hits@1, hits@3, hits@10, hits@10_50]
+
+optimizer:
+  class: Adam
+  learning_rate: 5.0e-3
+
+train:
+  batch_size: 32
+  num_epoch: 20
+  log_interval: 100
